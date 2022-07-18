@@ -1,0 +1,4 @@
+// variables : en las variables se guarda informacion para poder utilizarla en cualquier momento
+// strings : son palabras, hilo de caracteres que siempre se delimitan con ' '
+// funciones : se usan para no escribir codigo que haga varias veces lo mismo,entre () van los argumento que funcionan como las variables en las funciones. return es el valor que retorna de una funcion, ocurre una sola vez.
+// valores booleanos : son valores verdaderos(true) o falsos (false) 
