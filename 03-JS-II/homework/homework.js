@@ -5,12 +5,22 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x < y){
+    console.log (x);
+  } else {
+    return y;
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad >= 18){
+    console.log("Allowed");
+  } else {
+    return "Not allowed"
+  }
 }
   
 function conection(status) {
@@ -19,6 +29,13 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if (status == 1) {
+    console.log("Online");
+  } else if (status == 2) {
+      console.log("Away");
+  }else {
+    return "Oflline"
+  }
 }
 
 function saludo(idioma) {
@@ -28,6 +45,15 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma == "aleman") {
+    console.log("Guten Tag!");
+  } else if (idioma == "mandarin"){
+    console.log("Ni Hao!");
+  } else if (idioma == "ingles"){
+    console.log("Hello!");
+  } else {
+      return "Hola!";
+  }
 }
 
 function colors(color) {
@@ -38,6 +64,25 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  var  pintura;
+  switch (color){
+    case "blue":
+    console.log("This is blue") ; 
+    break;
+    case pintura = "red":
+    console.log("This is red");
+    break;
+    case pintura = "green":
+    console.log("This is green");
+    break;
+    case pintura = "orange" :
+    console.log("This is orange");
+    break;
+    default :
+    console.log("Color not Found");
+    break;
+  }
+    return;
 }
 
 function esDiezOCinco(numero) {
